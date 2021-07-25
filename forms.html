@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+
+    <form action="/funk">
+        <p>
+            <label for"niceshot">Enter a niceshot:</label>
+            <input id="niceshot" type="text" placeholder="niceshot" name="niceshot">
+        </p>
+        <p>
+            <label for="password">enter your password</label>
+            <input id="password" type="password">
+        </p>
+        <p>
+            <label for="color">choose a color you like</label>
+            <input id="color" type="color">
+        </p>
+        <input type="month">
+        <input type="text">
+        <input type="text">
+        <input type="text">
+        <input type="button" values="Submit">
+        <button>Submit</button>
+    </form>
+    <h2>Hijacking Searches</h2>
+    <h3>Search Google</h3>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h3>Search Youtube</h3>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree" checked>
+        <label for="checkbox">I agree to everything</label>
+        <p>
+            <label for="xs">XS</label>
+            <input type="radio" name="size" id="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m">
+        </p>
+        <p>
+            <label for="meal">pick one</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+    </form>
+
+</body>
+
+</html>
